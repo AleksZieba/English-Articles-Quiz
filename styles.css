@@ -176,3 +176,12 @@ img {
     transform: translate(-10%, -50%);
   }
 } 
+
+@media (orientation: portrait) { 
+    img {
+      display: none;
+    } 
+    .app {
+      top: 25%;
+    } 
+}
