@@ -182,9 +182,9 @@ const questions = [
     }, {
         question: "Chris is serving ___ time at ___ local prison.", 
         answers: [
-            { text: "(bez) ; (bez)", correct: true},
+            { text: "(bez) ; (bez)", correct: false},
             { text: "a : (bez)", correct: false},
-            { text: "(bez) ; the", correct: false},
+            { text: "(bez) ; the", correct: true},
             { text: "an ; the", correct: false},
         ]
     }, {
