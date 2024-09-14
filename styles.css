@@ -114,10 +114,11 @@ transform: translate(50%, -50%);
 
 .backstretch {   
 position: absolute; 
-padding: 0;
-min-height: 100vh;
-min-width: 100vw; 
-display: inline-block;
+padding: 0; 
+min-width: 100vw;
+min-height: 100vw;
+background-size: cover;
+background-position: center top;  
 background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);  
 animation: filter-animation 20s infinite;
 }  
@@ -194,3 +195,22 @@ img {
     max-height: 95%;
   } 
 }
+
+@media (min-aspect-ratio: 1.18/1) {
+  .backstretch {
+    min-height: 175vh;
+    min-width: 100vw; 
+  }
+  .app { 
+    min-height: 600px;
+    top: 45%;
+    background-position: center;
+  }
+} 
+@media (min-aspect-ratio: 1.18/1) {
+  img {
+  display: none;
+  } 
+} 
+
+/*@media (min-aspect-ratio: 9/22) and (max-aspect-ratio: 9/16) {
