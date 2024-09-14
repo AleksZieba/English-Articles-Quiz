@@ -194,9 +194,6 @@ img {
   } 
   .backstretch {
     background-size: cover !important;
-    background-position: center top;   
-    min-height: 100vh; 
-    min-width: 100vh; 
   }
 }
 
