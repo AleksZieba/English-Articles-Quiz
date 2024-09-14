@@ -199,9 +199,8 @@ img {
 
 @media (min-aspect-ratio: 1.18/1) {
   .backstretch { 
-    background-size: cover !important;
     min-height: 175vh;
-    min-width: 100vw; 
+    min-width: 130vw; 
   }
   .app { 
     min-height: 600px;
