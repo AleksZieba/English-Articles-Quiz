@@ -209,10 +209,7 @@ img {
     top: 25%; 
     max-height: 95%;
   } 
-  .backstretch {
-    min-height: 100vh !important;
-    min-width: 100vh !important;  
-  }
+
 }
 
 /*@media (min-aspect-ratio: 9/22) and (max-aspect-ratio: 9/16) {
