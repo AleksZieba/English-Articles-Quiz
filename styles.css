@@ -115,8 +115,8 @@ transform: translate(50%, -50%);
 .backstretch {   
 position: absolute; 
 padding: 0; 
-min-height: 100vh; 
-max-height: 100vw;
+background-size: cover;
+background-position: center top;  
 background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);  
 animation: filter-animation 20s infinite;
 }  
@@ -192,6 +192,10 @@ img {
     top: 25%; 
     max-height: 95%;
   } 
+  .backstretch {
+    background-size: cover;
+    background-position: center top;  
+  }
 }
 
 @media (min-aspect-ratio: 1.18/1) {
