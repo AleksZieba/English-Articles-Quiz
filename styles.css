@@ -182,21 +182,7 @@ img {
   height: 125px;
   transform: translate(-10%, -50%);
   }
-} 
-
-@media (orientation: portrait) { 
-  img {
-    display: none;
-  } 
-  .app {
-    top: 25%; 
-    max-height: 95%;
-  } 
-  .backstretch {
-    background-size: cover !important;
-    background-position: center top !important;  
-  }
-}
+}  
 
 @media (min-aspect-ratio: 1.18/1) {
   .backstretch { 
@@ -214,5 +200,19 @@ img {
   display: none;
   } 
 } 
+
+@media (orientation: portrait) { 
+  img {
+    display: none;
+  } 
+  .app {
+    top: 25%; 
+    max-height: 95%;
+  } 
+  .backstretch {
+    background-size: cover !important;
+    background-position: center top !important;  
+  }
+}
 
 /*@media (min-aspect-ratio: 9/22) and (max-aspect-ratio: 9/16) {
