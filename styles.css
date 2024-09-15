@@ -193,8 +193,8 @@ img {
     max-height: 95%;
   } 
   .backstretch {
-    background-size: cover;
-    background-position: center top;  
+    background-size: cover !important;
+    background-position: center top !important;  
   }
 }
 
