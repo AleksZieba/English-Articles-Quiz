@@ -10,7 +10,9 @@
   position: absolute; 
   padding: 0; 
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100%; 
+  background-size: cover;
+  background-position: center top;
   background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);  
   animation: filter-animation 20s infinite;
 }  
