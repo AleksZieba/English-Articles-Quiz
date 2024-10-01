@@ -9,8 +9,11 @@
 .backstretch {   
   position: absolute; 
   padding: 0; 
-  background-size: cover;
-  background-position: center top;
+  min-width: auto;
+  min-height: 100%;  
+  background-size: cover; 
+  background-position: top; 
+  background-attachment: fixed;
   background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);  
   animation: filter-animation 20s infinite;
 }  
@@ -146,10 +149,19 @@ img {
 }  
 
 @media (min-width: 481px) and (max-width: 1200px) {
-.app {
-  position: relative;
-  margin-inline: auto;
-} 
+  .backstretch { 
+    position: absolute; 
+    min-height: 100%;
+    min-width: 100%;  
+    background-size: cover; 
+    background-position: top;
+  }
+  .app {
+    left: 25%; 
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%, -50%);
+  } 
 img { 
   top: 20%;
   transform: translate(0%, 50%);
@@ -162,7 +174,7 @@ img {
 }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { 
 .app {
   left: 25%; 
   position: absolute;
@@ -184,8 +196,10 @@ img {
   .backstretch { 
     position: absolute; 
     min-height: 100%;
-    min-width: 100%;
-  }  
+    min-width: 100%;  
+    background-size: cover; 
+    background-position: top;
+  } 
   img {
   top: 20%;
   transform: translate(0%, 50%)
@@ -195,16 +209,22 @@ img {
     top: 45%;
   }
 } 
-@media (orientation: portrait) { 
+@media (orientation: portrait) {  
+  
   img {
-    max-height: 0px; 
-    margin: 0%;
-  } 
+    display: none;
+  }
+  .backstretch { 
+      position: absolute; 
+      min-height: 100%;
+      min-width: 100%;  
+      background-size: cover !important; 
+      background-position: top;
+    }
   .app {
     top: 25%; 
-    max-height: 95%;
+    max-height: 95%; 
   } 
-
 }
 
 /*@media (min-aspect-ratio: 9/22) and (max-aspect-ratio: 9/16) {
