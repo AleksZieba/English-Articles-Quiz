@@ -183,10 +183,10 @@ img {
 }  
 
 @media (min-aspect-ratio: 1.18/1) {
-  .backstretch { 
+/*  .backstretch { 
     position: absolute; 
     min-height: 100%;
-    min-width: 100%;  
+    min-width: 100%; */
   }  
   img {
   top: 20%;
